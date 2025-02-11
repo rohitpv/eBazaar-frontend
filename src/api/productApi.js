@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // Replace with your backend API URL if different
+  baseURL: "https://e-bazaar-backend-delta.vercel.app/api", // Replace with your backend API URL if different
   headers: {
     "Content-Type": "application/json",
   },
@@ -21,7 +21,7 @@ export const fetchProducts = async () => {
 export const filterProducts = async (query) => {
   // actual axios call to fetch products
   try {
-    const response = await axios.post('http://localhost:5000/api/openai', {
+    const response = await axios.post('https://e-bazaar-backend-delta.vercel.app/api/openai', {
       prompt: query
     });
     // console.log(response)
