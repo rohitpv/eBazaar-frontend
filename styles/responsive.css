@@ -1,0 +1,48 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive flex container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    justify-content: space-around;
+  }
+}
+
+/* Responsive text */
+h1 {
+  font-size: 2em;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
